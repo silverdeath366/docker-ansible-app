@@ -1,6 +1,5 @@
 ---
 - hosts: all
-  become: true
   vars:
     docker_image: "{{ docker_image }}"
   tasks:
@@ -11,3 +10,4 @@
         ports:
           - "80:5000"
         restart_policy: always
+
